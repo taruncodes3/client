@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Services</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #0f0, #00f, #f0f);
+            color: #fff;
+            font-size: 2.5em;
+            font-weight: bold;
+            animation: glow 2s infinite;
+        }
+
+        @keyframes glow {
+
+            0%,
+            100% {
+                text-shadow: 0 0 10px #0f0, 0 0 20px #00f, 0 0 30px #f0f;
+            }
+
+            50% {
+                text-shadow: 0 0 20px #0f0, 0 0 40px #00f, 0 0 60px #f0f;
+            }
+        }
+
+        .about-section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #111;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+            width: 300px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.5s, box-shadow 0.5s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 15px 0;
+        }
+
+        .card p {
+            font-size: 0.9em;
+            color: #ccc;
+        }
+
+        .instagram-section {
+            margin: 30px;
+            text-align: center;
+        }
+
+        .instagram-section img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+
+        .instagram-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #fff;
+            background: linear-gradient(90deg, #f093fb, #f5576c);
+            border: none;
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 87, 102, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .instagram-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(255, 87, 102, 0.6);
+        }
+
+        footer {
+            background-color: #111;
+            color: #bbb;
+            text-align: center;
+            padding: 10px;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Professional Services</header>
+
+    <section class="about-section">
+        <h2>About Us</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Car+Washing" alt="Car Washing">
+                <h3>Car Washing</h3>
+                <p>Top-notch car washing services to make your vehicle shine.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Carpentry" alt="Carpentry">
+                <h3>Carpentry</h3>
+                <p>Expert carpentry solutions for your home and office needs.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Plumbing" alt="Plumbing">
+                <h3>Plumbing</h3>
+                <p>Reliable plumbing services to fix your leaks and clogs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="instagram-section">
+        <h2>Follow Us on Instagram</h2>
+        <img src="D:\PORTFOLIO\df.jpg" alt="Instagram Profile">
+        <button class="instagram-button" onclick="redirectToInstagram()">Visit Instagram</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Professional Services. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function redirectToInstagram() {
+            window.location.href = "https://www.instagram.com/all_service_24h/"; // Replace with your Instagram URL
+        }
+    </script>
+</body>
+
+</html>
